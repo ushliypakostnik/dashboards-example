@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <Test />
+    <Dashboards :api="url" />
   </div>
 </template>
 
 <script>
-import Test from './components/Test.vue';
+const apiUrl = process.env.VUE_APP_API_URL;
 
 export default {
   name: 'App',
 
-  components: {
-    Test,
+  data() {
+    return {
+      url: apiUrl || 'http://localhost:8083',
+    };
   },
 };
 </script>
