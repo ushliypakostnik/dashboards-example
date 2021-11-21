@@ -19,5 +19,5 @@ export default {
 </script>
 
 <style lang="stylus">
-@import "~/src/stylus/_stylebase.styl";
+@import "~/src/_stylebase.styl";
 </style>
